@@ -1,0 +1,308 @@
+/*
+    Template:       airi
+    Theme Name:     Airi Child
+    Theme URI:      http://themeforest.net/user/LA-Studio/portfolio?ref=LA-Studio
+    Author:         LA Studio
+    Author URI:     http://themeforest.net/user/LA-Studio?ref=LA-Studio
+    Description:    Clean, Minimal WooCommerce Theme
+    Version:        1.0
+    Tags:           one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, translation-ready
+    License: 		GNU General Public License
+	License URI: 	licence/GPL.txt
+    Text Domain:    airi-child
+    Domain Path:    /languages/
+*/
+.banner-type-14 .b-title1 {
+    background-color: #91a724;
+}
+.la_testimonials--style-3 .loop__item__desc{
+	font-family: "Merriweather Sans", "Helvetica Neue", Arial, sans-serif;font-size: 16px;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+.keys .icon-boxes-inner{
+text-align:center;	
+}
+.site-footer p{
+	font-size:16px;
+}
+.site-footer .widget {
+    margin-bottom: 0px;
+}
+.social-media-link.style-default a{
+	    color: #000 !important;
+}
+
+
+.ft-fixed-area .reservation-box{color: #fff;
+    background-color: #f15f2a;
+    background-image: url(http://digidicemedia.com/greensoulskitchen/wp-content/uploads/2022/07/ft-res-bg.jpg);
+    background-size: cover;
+    position: relative;
+   
+padding: 20px;}
+
+.ft-fixed-area .reservation-wrap {
+    border: 1px solid #fff;
+    padding: 10px 25px 25px;
+    position: relative;
+}
+.ft-fixed-area .reservation-wrap:before, .ft-fixed-area .reservation-wrap:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.ft-fixed-area .reservation-wrap:before {
+    top: -5px;
+    right: -5px;
+}
+.ft-fixed-area .reservation-wrap .res-title {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Rancho', cursive;
+}
+.ft-fixed-area .reservation-wrap .res-date {
+    width: 60%;
+    float: left;
+	overflow: hidden;}
+.ft-fixed-area .reservation-wrap .res-date .res-date-item {
+    display: table;
+    width: 100%;
+}.ft-fixed-area .reservation-wrap .res-date .res-date-text {
+    display: table-cell;
+}.ft-fixed-area .reservation-wrap .res-date .res-date-dot {
+    display: table-cell;
+    padding-left: 5px;
+    opacity: 0.7;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.ft-fixed-area .reservation-wrap .res-time {
+    width: 40%;
+    float: right;
+    padding-left: 5px;
+    color: #1d1b20;
+}
+.ft-fixed-area .reservation-wrap .res-title {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Rancho', cursive;
+}
+.ft-fixed-area .reservation-wrap .res-number {
+    font-size: 30px;
+    font-weight: 700;
+    color: #1d1b20;
+    text-align: center;
+}
+.ft-fixed-area .reservation-wrap:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.ft-fixed-area .reservation-wrap:after {
+    bottom: -5px;
+    left: -5px;
+}
+.site-footer hr{
+	    border-top: 1px solid #91a623;
+}
+.footer-top a,.footer-top span{
+	font-size:15px;line-height: 25px;
+}
+.footer-top .widget .widget-title span{
+	font-size:18px;font-weight: 700;
+}
+.mega-menu > li{
+	    padding: 0 0px;
+}
+
+.cww-sff-wrapp{
+	color:#fff;
+}
+.wpcf7{
+	    color: #0a4a28;
+}
+.cww-ssf-outer-wrapp .cww-sff-wrapp{
+	    padding: 35px 35px 0px 35px;
+}
+.la__ttaac > .vc_tta.accordion--3 .vc_tta-panel .vc_tta-panel-title > a{
+	         background-color: #ebfbe9;
+    box-shadow: rgb(0 0 0 / 45%) 0px 25px 20px -20px;
+}
+.la__ttaac > .vc_tta.accordion--3 .vc_tta-panel.vc_active .vc_tta-panel-title > a{
+	 box-shadow:none;
+}
+.vc_tta.vc_general .vc_tta-panel.vc_active .vc_tta-panel-body{
+	background-color: #ebfbe929;
+	 box-shadow: rgb(0 0 0 / 45%) 0px 25px 20px -20px;
+}
+.la__ttaac > .vc_tta.accordion--3 .vc_tta-panel > .vc_tta-panel-body{
+	font-size: 16px;
+}.la__ttaac > .vc_tta.accordion--3 .vc_tta-panel .vc_tta-panel-title > a{
+	font-weight: 600;
+    font-size: 16px;
+}
+.site-main{
+	padding-top:0px;
+		padding-bottom:0px;
+}
+.site-header .header_component--linktext:hover > a .component-target-text{
+	color:#fff;
+}
+.widget ul{
+	column-count: 2;
+}
+.cww-ssf-outer-wrapp .cww-ssf-toggle{
+	    box-shadow: 1px 2px 12px #000 !important;
+}
+.site-main-nav .main-menu > li > a{
+	text-transform: uppercase;
+}
+.header_component{
+	  background-color: #ef801a;
+	    padding: 4px 25px !important;
+    border-radius:30px;
+}
+.header_component:hover {
+    background-color: #0a4a28;
+}
+.header-v1 .site-header .header-left{
+	    width: 15%;
+}
+.header-v1 .site-header .header-right{
+	    width: 85%;
+}
+.mega-menu > li > a{
+	padding: 5px 18px;
+}
+.site-branding{
+	    padding-left: 10px;
+}
+
+.header-main{
+	    background: #fff;
+	border-radius: 0px 0px 15px 15px;
+	box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+}
+.site-header .header-component-inner {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.site-header .site-header-inner{
+	    background-color: #fff0;
+}
+.site-header .header_component > .component-target,.enable-header-transparency .site-header:not(.is-sticky) .header_component > .component-target{
+	    color: #ffffff;
+	font-weight:600;
+}
+.la_com_action--linktext{
+	margin-left: 15px;
+}
+.services_section .wpb_single_image,.services_section .wpb_content_element{
+	margin-bottom:0px;
+}
+.services_section p{
+	font-weight: 400;
+font-size: 24px;
+}
+
+.la-testimonials .grid-items .grid-item{
+	padding-left: 50px;
+    padding-right: 50px;
+}
+.la-testimonials .testimonial_item .loop__item__info2{
+	background-color: #ffffff;
+    padding: 40px;
+}
+.slick-slider .slick-dots{margin:0px;}
+.site-footer{
+	    background-image: url(//www.greensoulkitchens.in/demo/wp-content/uploads/2022/12/Group-1520.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.footer-bottom .footer-bottom-inner {
+    padding-top: 0px !important;
+}
+.heading-tag,.la-headings .heading-tag{
+		font-weight: 600;
+}
+.appblock .la-headings h4{
+	font-weight: 600;
+    margin-bottom: 15px;
+    width: 200px;
+	margin:auto !important;
+}
+.appblock .vc_column-inner{
+	   box-shadow: 0px 2px 9px 0px rgb(190 189 189);
+}
+blog_content_container{
+	    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.cf7-style-default .wpcf7-form-control-wrap .wpcf7-select, .cf7-style-default .wpcf7-form-control-wrap .wpcf7-text, .cf7-style-default .wpcf7-form-control-wrap .wpcf7-textarea{
+	border-color: #daf0d4;
+    background-color: #ebfbe9;
+
+}
+.showposts-loop.grid-5 .loop__item__info{
+	    padding: 0px 15px;
+    margin-top: -14px;
+}
+.showposts-loop.grid-5 .loop__item__info .loop__item__info2{
+	background-color: #ebfbe9;
+    padding: 20px;
+}
+
+table, table th, table td{
+	    border-width: 1px;
+    border-style: solid;
+    padding: 5px 15px;
+    vertical-align: top;
+    font-size: 13px !important;
+    margin-bottom: 15px;
+}
+div#wpcs_content_inner_1746,div#wpcs_content_main_1746{
+	width: 400px !important;
+	padding: 30px !important;
+    margin: 0px !important;
+	    height: 75% !important;
+    min-height: 50% !important;
+}
+.footerdownload{
+	    text-align: right;
+}
+.appbutton{
+	float: right;
+}
+@media (max-width: 767px){
+.footerdownload{
+	    text-align: left;
+}	
+	.appbutton{
+	float: left;
+		margin-top: 10px;
+	}.btnimg{
+		width:100px !important;
+	}
+	.la_com_action--linktext{
+		    margin-left: 10px;
+	}
+	.header_component{
+		    padding: 4px 10px !important;
+	}
+	#sticky-social-icons-container li a{
+		    font-size: 15.6px !important;
+    width: 35.9px !important;
+    height: 35.9px !important;
+	}
+}
