@@ -1,0 +1,98 @@
+C:\Users\LENOVO>psql -U postgres
+Password for user postgres:
+
+psql (16.3)
+WARNING: Console code page (437) differs from Windows code page (1252)
+         8-bit characters might not work correctly. See psql reference
+         page "Notes for Windows users" for details.
+Type "help" for help.
+
+postgres=# \c tiffin;
+You are now connected to database "tiffin" as user "postgres".
+tiffin=# \dt;
+                      List of relations
+ Schema |              Name               | Type  |  Owner
+--------+---------------------------------+-------+----------
+ public | admin                           | table | postgres
+ public | locations                       | table | postgres
+ public | person                          | table | postgres
+ public | ratings                         | table | postgres
+ public | specializations                 | table | postgres
+ public | tiffin_services                 | table | postgres
+ public | tiffin_services_specializations | table | postgres
+(7 rows)
+
+
+tiffin=# select * from admin;
+ a_id |     name      |          email          | password
+------+---------------+-------------------------+----------
+    1 | shivtej pawar | shivtejpawar8@gmail.com | 7757
+(1 row)
+
+
+tiffin=# select * from locations;
+ l_id |      name      |    city    |    state    | country | p_code
+------+----------------+------------+-------------+---------+--------
+    1 | MG Road        | Sangamner  | Maharashtra | India   | 422605
+    2 | Main Street    | Pune       | Maharashtra | India   | 411001
+    3 | Station Road   | Mumbai     | Maharashtra | India   | 400001
+    4 | Market Road    | Nashik     | Maharashtra | India   | 422001
+    5 | Central Avenue | Aurangabad | Maharashtra | India   | 431001
+(5 rows)
+
+
+tiffin=# select * from person;
+ p_id | name |        email        |  phone_no  | address |                           password
+------+------+---------------------+------------+---------+--------------------------------------------------------------
+    7 | Shiv | shivtej@example.com | 7676764545 | pune    | $2y$10$wN0aHmZV8AuJnwOo//oA6ef8eBRa5jmVW0sIXleGhoQuoB2SCz0L.(1 row)
+
+
+tiffin=# select * from rating;
+ERROR:  relation "rating" does not exist
+LINE 1: select * from rating;
+                      ^
+tiffin=# select * from ratings;
+ r_id | review | p_id | created_at | updated_at
+------+--------+------+------------+------------
+(0 rows)
+
+
+tiffin=# select * from specializations;
+ s_id |     name
+------+---------------
+    1 | South Indian
+    2 | North Indian
+    3 | Chinese
+    4 | Continental
+    5 | Maharashtrian
+    6 | Gujarati
+    7 | Vegan
+    8 | Jain
+    9 | Italian
+   10 | Fast Food
+(10 rows)
+
+
+tiffin=# select * from tiffin_services;
+ h_id |         name         |     address      |    city    |    state    |  phone_no  |          email          | specializations |         website_link          |                           password                           | a_id | l_id
+------+----------------------+------------------+------------+-------------+------------+-------------------------+-----------------+-------------------------------+--------------------------------------------------------------+------+------
+    1 | Shivtej Tiffins      | 123 MG Road      | Sangamner  | Maharashtra | 9876543210 | shivtej@example.com     |                 | http://shivtejtiffins.com     | pass123                                                      |    1 |    1    2 | Sai Tiffin Service   | 45 Main Street   | Pune       | Maharashtra | 9123456780 | sai@example.com         |                 | http://saitiffins.com         | pass456                                                      |    2 |    2    3 | Annapurna Meals      | 78 Station Road  | Mumbai     | Maharashtra | 9988776655 | annapurna@example.com   |                 | http://annapurnameals.com     | pass789                                                      |    3 |    3    4 | Swadisht Tiffins     | 22 MG Road       | Nashik     | Maharashtra | 9112233445 | swadisht@example.com    |                 | http://swadisht.com           | pass321                                                      |    4 |    4    5 | Ruchi Tiffin Service | 10 Market Street | Aurangabad | Maharashtra | 9001122334 | ruchi@example.com       |                 | http://ruchitiffins.com       | pass654                                                      |    5 |    5    6 | Shivtej Pawar        | karvenagr,pune   | pune       | Maharashtra | 7757949545 | shivtej@gmail.com       | 3               | https://greensoulkitchens.in/ | $2y$10$T3REdIOyoCSA6YecNk3ODufi5FrZmdelUcXyoNKK8prWhF2jUJvc. |    1 |    2    8 | Shivtej Pawar        | karvenagr,pune   | pune       | Maharashtra | 7757949545 | shivtej8@gmail.com      | 3               | https://greensoulkitchens.in/ | $2y$10$HUlv4OpgOECIE5pgkuYe6.gDxL1MbnqE8uNKtiovtdrQjBHagP9Ze |    1 |    2   11 | Shivtej Pawar        | karvenagr,pune   | pune       | Maharashtra | 7757949545 | asd@gmail.com           | 3               | https://greensoulkitchens.in/ | $2y$10$Ycq3WjWFskThq9HOWo5XDuRSV9EXSwofiDISSjHUbWyUuGah1dBRO |    1 |    2   13 | Shivtej Pawar        | karvenagr,pune   | pune       | Maharashtra | 7757949545 | asdqwe@gmail.com        | 3               | https://greensoulkitchens.in/ | $2y$10$e3bB5ttKNkTDo8P.5ue7AeR1ZY9bKJS5KnErY/XTCIs1cq0P9CGfO |    1 |    2   15 | tejas                | qwe              | pune       | Maharashtra | 123        | tejas@gmail.com         | 4               | http:jkl                      | $2y$10$oayoOnW3b8H/HpxyfYaeMeVNABt2v6q/OKQk2X5lAdqlUIHSOsR.W |    1 |    1   16 | Shivejpawar          | qwer             | Pune       | Maharashtra | 7665769876 | shivtejpawar8@gmail.com | 1               | https://greensoulkitchens.in/ | $2y$10$Mn9r3h.1XkxzUqzqwqcm9.s0K9JcapHM36CjvgN9kQrkAMxMD4TZ. |    1 |    1(11 rows)
+^CCancel request sent
+tiffin=# select * from tiffin_services_specializations;
+ id | t_id | s_id
+----+------+------
+  1 |    1 |    1
+  2 |    1 |    5
+  3 |    2 |    2
+  4 |    2 |    3
+  5 |    3 |    1
+  6 |    3 |    4
+  7 |    4 |    5
+  8 |    4 |    6
+  9 |    5 |    7
+ 10 |    5 |    8
+ 11 |   16 |    1
+(11 rows)
+
+
+tiffin=#
